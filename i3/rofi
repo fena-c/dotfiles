@@ -1,0 +1,7 @@
+# ~.config/rofi/config.rasi
+
+configuration {
+  modi: "window,drun,ssh,combi";
+  theme: "gruvbox-dark-hard";
+  combi-modi: "window,drun,ssh";
+  }
