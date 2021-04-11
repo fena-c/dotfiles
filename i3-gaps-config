@@ -1,0 +1,33 @@
+###  Configuración de bumblebee-status
+bar {
+    #mode hide
+    #hidden_state hide
+    #modifier Ctrl
+    position top
+    font pango:PowerlineSymbols:style=Medium
+    font pango:FontAwesome 8
+    status_command $HOME/bumblebee-status/bumblebee-status \
+        -m cpu pasink time date \
+        -p time.format="%H:%M" \
+        -t dracula-powerline
+}
+
+### Cambiar el tamaño de las gaps con pocos botones
+
+bindsym $mod+r mode "$mode_gaps"
+
+mode "$mode_gaps" {
+        bindsym j gaps inner current plus 5  gaps outer current plus 5
+        bindsym k gaps inner current minus 5  gaps outer current minus 5
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+
+###  Shortcut para mostrar/ocultar la barra de estado
+
+bindsym $mod+b bar mode toggle
+
+
+exec --no-startup-id compton
+
