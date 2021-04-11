@@ -7,7 +7,7 @@ bar {
     font pango:PowerlineSymbols:style=Medium
     font pango:FontAwesome 8
     status_command $HOME/bumblebee-status/bumblebee-status \
-        -m cpu pasink time date \
+        -m nvidiagup pomodoro battery date time pasink pasource \
         -p time.format="%H:%M" \
         -t dracula-powerline
 }
