@@ -18,7 +18,7 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #002e3440
+background = #2a1d1c
 ;background = #aaaaaa
 background-alt = #2c1d32
 ;foreground = ${xrdb:color7:#222}
@@ -93,9 +93,9 @@ cursor-scroll = ns-resize
 [bar/example2]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 22
-offset-x = 5
-offset-y = 5
+height = 25
+offset-x = 0
+offset-y = 0
 radius = 2
 fixed-center = true
 
@@ -124,18 +124,18 @@ font-3 = Font Awesome 5 Free:pixelsize=12;2
 font-4 = Font Awesome 5 Free Solid:pixelsize=12;2
 font-5 = Font Awesome 5 Brands:pixelsize=12;2
 
-modules-left = xwindow
+modules-left =  launcher files xwindow 
 modules-center = bspwm
-modules-right = pulseaudio battery date
+modules-right = pulseaudio battery date crop
 
 
 
 tray-position = right
-tray-offset-y = -3
-tray-offset-x = -5
+tray-offset-y = 0
+tray-offset-x = 0
 tray-padding = 1
 tray-detached = false
-tray-background = #00000000
+tray-background = ${colors.background}
 tray-foreground = ${colors.primary}
 
 
@@ -158,25 +158,24 @@ cursor-scroll = ns-resize
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
-[module/menulist]
-type= custom/menu
-label-open = 
-label-close = 
+[module/files]
+type= custom/text
+content = "  "
+click-left = rofi -location 1 -yoffset 25 -show file-browser
 
-menu-0-0 = Browsers
-menu-0-0-exec = #menu-apps.open.1
-menu-0-1 = Multimedia
-menu-0-1-exec = #menu-apps.open.2
+[module/launcher]
+type= custom/text
+content = "  "
+click-left = rofi -location 1 -yoffset 25 -show drun
 
-menu-1-0 = Firefox
-menu-1-0-exec = firefox
-menu-1-1 = Chromium
-menu-1-1-exec = chromium
+[module/crop]
+type= custom/text
+content = "   "
+click-left = i3lock -i ~/Imágenes/Fondos\ de\ escritorio/walhaven.png 
 
-menu-2-0 = Discord
-menu-2-0-exec = discord
-menu-2-1 = Scrot
-menu-2-1-exec = scrot
+
+
+
 
 
 
@@ -291,6 +290,8 @@ type = internal/xbacklight
 
 format = <label> <bar>
 label = BL
+output = eDP
+
 
 bar-width = 10
 bar-indicator = |
@@ -448,6 +449,7 @@ label-discharging =  %percentage%%
 format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix = " "
+label-full =  %percentage%%
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = #00a3be8c
 
