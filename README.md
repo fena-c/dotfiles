@@ -1,5 +1,6 @@
 # dotfiles 
-![a](5.png)
+![a](tema_oscuro.png)
+![a](tema_oscuro.png)
 
 Configuraciones personales, por lo que algunos archivos no estarán tan ordenados. De todas maneras, cualquier persona puede usar configuraciones de aquí. 
 
