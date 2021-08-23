@@ -1,0 +1,9 @@
+/*tema oscuro*/
+
+
+* {
+  background: #2a1d1c;
+  border: #2a1d1c;
+  text: #f8e1e5;
+  selecc: #3f2b2a;
+}

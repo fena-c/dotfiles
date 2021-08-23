@@ -1,19 +1,24 @@
 
 
 
+
 configuration {
     display-drun: "";
     display-file-browser: "";
 }
 
 
+@import "colores.rasi"
+
+
 * {
-  background-color: #2a1d1c;
-  border-color: #2a1d1c;
-  text-color: #f8e1e5;
+  background-color: @background;
+  border-color: @background;
+  text-color: @text;
   width: 512px;
   height: 785px;
 }
+
 
 inputbar {
   border: 0 0 1px 0;
@@ -26,9 +31,9 @@ prompt {
 }
 
 textbox {
-  background-color: #3f2b2a;
+  background-color: @background;
   border: 0 0 1px 0;
-  border-color: #2a1d1c;
+  border-color: @background;
   padding: 8px 16px;
 }
 
@@ -58,5 +63,5 @@ element-icon {
 
 
 element selected {
-  background-color: #3f2b2a;
+  background-color: @selecc;
 }

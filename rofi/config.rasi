@@ -1,6 +1,5 @@
 configuration {
     modi: "window,drun,ssh,combi,windowcd,keys,run,file-browser";
     theme: "slate.rasi";
-    show-icons: true;
     combi-modi: "window,drun,ssh";
     }
