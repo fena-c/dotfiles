@@ -1,6 +1,13 @@
 # dotfiles 
+
+## BSPWM
 ![a](tema_oscuro.png)
 ![b](tema_claro.png)
+
+## QTILE
+
+![c](2022-04-16_15-15.png)
+![d](2022-04-16_15-17.png)
 
 Configuraciones personales, por lo que algunos archivos no estarán tan ordenados. De todas maneras, cualquier persona puede usar configuraciones de aquí. 
 
