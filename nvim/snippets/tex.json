@@ -1,0 +1,390 @@
+
+{
+    "rightarrow": {
+        "body": [
+            "\\rightarrow $0"
+        ],
+        "prefix": "arr"
+    },
+    "limite": {
+        "body": [
+            "\\lim\\limits_{$1 \\to $2} $0"
+        ],
+        "prefix": "lim\t\"limite\""
+    },
+    "environment": {
+        "body": [
+            "\\begin{$1}",
+            "\t$2",
+            "\\end{$1}",
+            "",
+            "$0"
+        ],
+        "prefix": "beg"
+    },
+    "infinito": {
+        "body": [
+            "\\infty"
+        ],
+        "prefix": "oo"
+    },
+    "raíz": {
+        "body": [
+            "\\sqrt[${1: }]{$2} $0"
+        ],
+        "prefix": "root"
+    },
+    "mathtext": {
+        "body": [
+            "\\text{$1} $0"
+        ],
+        "prefix": "mt"
+    },
+    "conjunto": {
+        "body": [
+            "\\{ $1 \\} $0"
+        ],
+        "prefix": "set"
+    },
+    "conjunto cerrado": {
+        "body": [
+            "[${1:a }, ${2: b}] $0"
+        ],
+        "prefix": "cc"
+    },
+    "implica": {
+        "body": [
+            "\\implies $0"
+        ],
+        "prefix": "imp\t\"implica\""
+    },
+    "displaystyle": {
+        "body": [
+            "\\displaystyle "
+        ],
+        "prefix": "ds"
+    },
+    "mathbb": {
+        "body": [
+            "\\mathbb{$1} $0"
+        ],
+        "prefix": "mb"
+    },
+    "mathcal": {
+        "body": [
+            "\\mathcal{$1} $0"
+        ],
+        "prefix": "cal"
+    },
+    "preambulo articulo": {
+        "body": [
+            "\\documentclass{article}",
+            "\\usepackage[utf8]{inputenc}",
+            "\\usepackage{amssymb, amsmath, amsthm, amsfonts}",
+            "\\usepackage[spanish]{babel}",
+            "\\usepackage{geometry}",
+            "\\usepackage{graphicx}",
+            "\\usepackage{tikz}",
+            "",
+            "\\author{Fernando Castillo}",
+            "\\title{$1}",
+            "\\date{\\today}",
+            "",
+            "\\theoremstyle{plain} ",
+            "\\newtheorem{lemma}{Lema}[section]",
+            "\\newtheorem{thm}{Teorema}[section]",
+            "\\newtheorem{prop}{Proposición}[section]",
+            "\\newtheorem{cor}{Corolario}[section] ",
+            "",
+            "\\theoremstyle{definition} ",
+            "\\newtheorem{defi}{Definición}[section]   ",
+            "",
+            "\\theoremstyle{remark} ",
+            "\\newtheorem*{remark}{Observación}  ",
+            "",
+            "\\newcommand{\\R}{\\mathbb{R}}",
+            "\\newcommand{\\Z}{\\mathbb{Z}}",
+            "\\newcommand{\\N}{\\mathbb{N}}",
+            "\\newcommand{\\e}{\\varepsilon}  ",
+            "",
+            "%%%%%%%%%%%%%",
+            "%%%%%%%%%%%%%",
+            "",
+            "\\begin{document}",
+            "",
+            "\\maketitle",
+            "",
+            "$0",
+            "",
+            "\\end{document}"
+        ],
+        "prefix": "article"
+    },
+    "sucesión": {
+        "body": [
+            "($1 _n)_{n\\in \\N} $0"
+        ],
+        "prefix": "suc"
+    },
+    "el boxed bacán": {
+        "body": [
+            "\\boxed{ $1 } $0"
+        ],
+        "prefix": "box"
+    },
+    "leftright corchetes": {
+        "body": [
+            "\\left[ $1 \\right] $0"
+        ],
+        "prefix": "lrc"
+    },
+    "corhete": {
+        "body": [
+            "{$1} $0"
+        ],
+        "prefix": "{"
+    },
+    "me da flojera tipear": {
+        "body": [
+            "T \\in \\mathcal{L}(V)$0"
+        ],
+        "prefix": "operador"
+    },
+    "R barra": {
+        "body": [
+            "\\overline{\\R} $0"
+        ],
+        "prefix": "rbarra"
+    },
+    "raw integral": {
+        "body": [
+            "\\int $1 dx $0"
+        ],
+        "prefix": "rint"
+    },
+    "Math": {
+        "body": [
+            "\\[",
+            "$1",
+            "\\]",
+            "$0"
+        ],
+        "prefix": "dm"
+    },
+    "align": {
+        "body": [
+            "\\begin{align*}",
+            "\t\\iff&    &    $0 &   &    &    \\\\",
+            "\\end{align*}"
+        ],
+        "prefix": "aligntex"
+    },
+    "convergencia": {
+        "body": [
+            "$1 \\rightarrow $0"
+        ],
+        "prefix": "conv"
+    },
+    "norma": {
+        "body": [
+            "\\lVert $1 \\rVert $0"
+        ],
+        "prefix": "norm"
+    },
+    "unión": {
+        "body": [
+            "\\cup $0"
+        ],
+        "prefix": "CUP"
+    },
+    "subconjunto": {
+        "body": [
+            "\\subseteq "
+        ],
+        "prefix": "sset"
+    },
+    "composición": {
+        "body": [
+            "\\circ $0"
+        ],
+        "prefix": "comp"
+    },
+    "set con puntitos": {
+        "body": [
+            "\\{ $1 _{${2:1 }}, \\dots, $1_{${3:n }} \\} $0"
+        ],
+        "prefix": "setd"
+    },
+    "geq": {
+        "body": [
+            "\\geq $0"
+        ],
+        "prefix": "geq"
+    },
+    "función": {
+        "body": [
+            "$1 \\colon $2 \\rightarrow $3 $0"
+        ],
+        "prefix": "func"
+    },
+    "POR": {
+        "body": [
+            "\\times $0"
+        ],
+        "prefix": "TIMES"
+    },
+    "integral superior": {
+        "body": [
+            "\\overline{\\int_{${1:a }}^{${2:b }}} $3 dx $0"
+        ],
+        "prefix": "intsup"
+    },
+    "integral inferior": {
+        "body": [
+            "\\underline{\\int_{${1:a }}^{${2:b }}} $3 dx $0"
+        ],
+        "prefix": "intinf"
+    },
+    "corchete": {
+        "body": [
+            "[$1] $0"
+        ],
+        "prefix": "["
+    },
+    "line integral": {
+        "body": [
+            "\\ds \\int $1 dx $0"
+        ],
+        "prefix": "lint"
+    },
+    "raised to": {
+        "body": [
+            "^{$1}$0"
+        ],
+        "prefix": "rai"
+    },
+    "brackit matrix": {
+        "body": [
+            "\\begin{bmatrix} $1 \\\\ $2 \\end{bmatrix}"
+        ],
+        "prefix": "bm"
+    },
+    "vectorflecha": {
+        "body": [
+            "\\vec{$1} $0"
+        ],
+        "prefix": "ve"
+    },
+    "sub": {
+        "body": [
+            "_{$1} $0"
+        ],
+        "prefix": "subb"
+    },
+    "integral": {
+        "body": [
+            "\\int_{${1:a }}^{${2:b }} $3 dx $0"
+        ],
+        "prefix": "int"
+    },
+    "sección": {
+        "body": [
+            "\\subsection{$1}",
+            "",
+            "$0"
+        ],
+        "prefix": "ssec"
+    },
+    "leftright": {
+        "body": [
+            "\\left( $1 \\right) $0"
+        ],
+        "prefix": "lr"
+    },
+    "producto interno": {
+        "body": [
+            "\\langle ${1:* } ,${2:* } \\rangle $0"
+        ],
+        "prefix": "pi"
+    },
+    "diapositiva": {
+        "body": [
+            "\\begin{frame}{$1}",
+            "$0",
+            "\\end{frame}"
+        ],
+        "prefix": "bframe"
+    },
+    "fraccion": {
+        "body": [
+            "\\frac{$1}{$2} $0"
+        ],
+        "prefix": "frac"
+    },
+    "sumatoria": {
+        "body": [
+            "\\sum_{n=$1}^{$2} $0"
+        ],
+        "prefix": "sum"
+    },
+    "parentesis matrix": {
+        "body": [
+            "\\begin{pmatrix} $1 \\\\ $2 \\end{pmatrix}"
+        ],
+        "prefix": "pm"
+    },
+    "leftright absoluto": {
+        "body": [
+            "\\left| $1 \\right| $0"
+        ],
+        "prefix": "lr|"
+    },
+    "en un conjunto": {
+        "body": [
+            "\\in "
+        ],
+        "prefix": "in"
+    },
+    "EQUALS": {
+        "body": [
+            "= $0"
+        ],
+        "prefix": "EQ"
+    },
+    "mat en linea": {
+        "body": [
+            "$$1$ $0"
+        ],
+        "prefix": "mk"
+    },
+    "boldfont": {
+        "body": [
+            "\\textbf{$1} $0"
+        ],
+        "prefix": "bf"
+    },
+    "leq": {
+        "body": [
+            "\\leq $0"
+        ],
+        "prefix": "leq"
+    },
+    "parentesis": {
+        "body": [
+            "($1) $0"
+        ],
+        "prefix": "("
+    },
+    "italic": {
+        "body": [
+            "\\textit{$1} $0"
+        ],
+        "prefix": "it"
+    },
+    "le infinito": {
+        "body": [
+            "\\infty"
+        ],
+        "prefix": "00"
+    }
+}

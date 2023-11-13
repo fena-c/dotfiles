@@ -1,0 +1,353 @@
+snippet beg "environment" wA
+\begin{$1}
+	$2
+\end{$1}
+
+$0
+endsnippet
+
+snippet frac "fraccion" w
+\frac{$1}{$2} $0
+endsnippet
+
+
+snippet article "preambulo articulo"
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb, amsmath, amsthm, amsfonts}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\author{Fernando Castillo}
+\title{$1}
+\date{\today}
+
+\theoremstyle{plain} 
+\newtheorem{lemma}{Lema}[section]
+\newtheorem{thm}{Teorema}[section]
+\newtheorem{prop}{Proposición}[section]
+\newtheorem{cor}{Corolario}[section] 
+
+\theoremstyle{definition} 
+\newtheorem{defi}{Definición}[section]   
+
+\theoremstyle{remark} 
+\newtheorem*{remark}{Observación}  
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\e}{\varepsilon}  
+
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+
+\begin{document}
+
+\maketitle
+
+$0
+
+\end{document}
+endsnippet
+
+
+snippet { "corhete" iA
+{$1} $0
+endsnippet
+
+snippet ( "parentesis" A
+($1) $0
+endsnippet
+
+snippet [ "corchete" A
+[$1] $0
+endsnippet
+
+snippet dm "Math" wA
+\[
+$1
+\]
+$0
+endsnippet
+
+
+snippet mk  "mat en linea" wA
+$$1$ $0
+endsnippet
+
+snippet rai "raised to" iA
+^{$1}$0
+endsnippet
+
+
+snippet bframe "diapositiva" A
+\begin{frame}{$1}
+$0
+\end{frame}
+endsnippet
+
+
+snippet cap "unión" 
+\cap $0
+endsnippet
+
+
+snippet cup "unión" 
+\cup $0
+endsnippet
+
+snippet CAP "unión" 
+\cap $0
+endsnippet
+
+
+snippet CUP "unión" wA
+\cup $0
+endsnippet
+
+
+snippet TIMES "POR" wA
+\times $0
+endsnippet
+
+
+snippet EQ "EQUALS" wA 
+= $0
+endsnippet
+
+
+snippet func "función" w
+$1 \colon $2 \rightarrow $3 $0
+endsnippet
+
+
+snippet comp "composición" w
+\circ $0
+endsnippet
+
+
+snippet lim	"limite" w
+\lim\limits_{$1 \to $2} $0
+endsnippet
+
+snippet arr "rightarrow" w 
+\rightarrow $0
+endsnippet
+
+snippet subb "sub" iA
+_{$1} $0
+endsnippet
+
+snippet imp	"implica" w
+\implies $0
+endsnippet
+
+
+snippet leq "leq" wA
+\leq $0
+endsnippet
+
+snippet geq "geq" wA
+\geq $0
+endsnippet
+
+snippet sum "sumatoria" wi
+\sum_{$1}^{$2} $0
+endsnippet
+
+
+snippet aligntex "align" w
+\begin{align*}
+	\iff&    &    $0 &   &    &    \\\
+\end{align*}
+endsnippet
+
+snippet ve "vectorflecha" w
+\vec{$1} $0
+endsnippet
+
+
+
+snippet pm "parentesis matrix" w 
+\begin{pmatrix} $1 \\\ $2 \end{pmatrix}
+endsnippet
+
+snippet bm "brackit matrix" w 
+\begin{bmatrix} $1 \\\ $2 \end{bmatrix}
+endsnippet
+
+snippet it "italic" w 
+\textit{$1} $0
+endsnippet
+
+snippet bf "boldfont" w 
+\textbf{$1} $0
+endsnippet
+
+snippet mb "mathbb" w
+\mathbb{$1} $0
+endsnippet
+
+
+snippet sec "sección" w 
+\section{$1}
+
+$0
+endsnippet
+
+snippet ssec "sección" w 
+\subsection{$1}
+
+$0
+endsnippet
+
+
+
+snippet set "conjunto" w
+\\{ $1 \\} $0
+endsnippet
+
+
+snippet mt "mathtext" w 
+\text{$1} $0
+endsnippet
+
+snippet in "en un conjunto" w
+\in 
+endsnippet
+
+snippet lr "leftright"
+\left( $1 \right) $0
+endsnippet
+
+snippet lrc "leftright corchetes"
+\left[ $1 \right] $0
+endsnippet
+
+snippet lr| "leftright absoluto"
+\left| $1 \right| $0
+endsnippet
+
+
+
+
+snippet suc "sucesión" wi
+($1 _n)_{n\in \N} $0
+endsnippet
+
+snippet rbarra "R barra" wi 
+\overline{\R} $0
+endsnippet
+
+
+snippet cal "mathcal" w
+\mathcal{$1} $0
+endsnippet
+
+
+
+
+
+
+snippet intsup "integral superior"
+\overline{\int_{${1:a }}^{${2:b }}} $3 dx $0
+endsnippet
+
+
+snippet intinf "integral inferior"
+\underline{\int_{${1:a }}^{${2:b }}} $3 dx $0
+endsnippet
+
+
+snippet int "integral" w
+\int_{${1:a }}^{${2:b }} $3 dx $0
+endsnippet
+
+
+snippet setd "set con puntitos" w
+\\{ $1 _{${2:1 }}, \dots, $1_{${3:n }} \\} $0
+endsnippet
+
+
+
+snippet cc "conjunto cerrado" wi
+[${1:a }, ${2: b}] $0
+endsnippet
+
+snippet pi "producto interno" wi
+\langle ${1:* } ,${2:* } \rangle $0
+endsnippet
+
+snippet norm "norma" wi
+\lVert $1 \rVert $0
+endsnippet
+
+
+snippet root "raíz" wi
+\sqrt[${1: }]{$2} $0
+endsnippet
+
+snippet oo "infinito" wi
+\infty
+endsnippet
+
+snippet sset "subconjunto" wi
+\subseteq 
+endsnippet
+
+
+
+snippet ds "displaystyle" wi
+\displaystyle 
+endsnippet
+
+snippet rint "raw integral" wi
+\int $1 dx $0
+endsnippet 
+
+
+snippet lint "line integral" wi
+\ds \int $1 dx $0
+endsnippet
+
+snippet box "el boxed bacán" wi
+\boxed{ $1 } $0
+endsnippet
+
+snippet operador "me da flojera tipear" wi
+T \in \mathcal{L}(V)$0
+endsnippet
+
+
+snippet 00 "le infinito" wi
+\infty
+endsnippet
+
+
+snippet conv "convergencia" wi
+$1 \rightarrow $0
+endsnippet
+
+
+
+snippet snorm "subgrupo normal" wi
+\trianglelefteq 
+endsnippet
+
+snippet gen "generado por" wi
+\langle $1 \rangle $0 
+endsnippet
+
+
+
+snippet zmod "zmodulo algo" wi
+\mathbb{Z}/$1\mathbb{Z} $0 
+endsnippet
+
+
+snippet orb "orbita" wi
+\mathcal{O}$0
+endsnippet
